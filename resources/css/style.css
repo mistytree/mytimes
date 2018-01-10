@@ -1,3 +1,8 @@
+body {
+  margin-left:0;
+  margin-right:0;
+}
+
 .header {
   font-family: Verdana;
   font-size: 14px;
@@ -5,25 +10,121 @@
   display: flex;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
+  justify-content: space-between;
 }
 
 .logo {
   color: MediumAquamarine;
-  display: inline-flex;
-  /*flex: 1 2 400px;*/
+  display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
-.logo p {
+.page_title {
   padding-left: 10px;
 }
 
 .navigation {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  padding-right: 20px;
 }
 
 .navigation a {
   color: Black;
   padding: 10px;
+}
+
+.main_container {
+  display: flex;
+  justify-content: center;
+}
+
+.large {
+  width: 630px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.large.main {
+  margin: 30px 15px;
+}
+
+.large.bottom {
+  display: flex;
+  flex-flow: row;
+}
+
+.large.bottom_left, .large.bottom_right {
+  display: flex;
+  flex-flow: column;
+}
+
+.medium {
+  width: 300px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.medium.main {
+  margin: 30px 15px;
+}
+
+.small {
+  width: 240px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.small.main {
+  margin: 30px 15px;
+}
+
+.image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.image.main {
+  font-size: 40px;
+}
+
+.large.one {
+  background-image: url("../images/img-story-main.png");
+  background-size: 100%;
+  display: flex;
+  justify-content: flex-start;
+  }
+
+.large.four {
+  background-image: url("../images/img-story-2.png");
+  background-size: cover;
+  display: inline-flex;
+
+}
+
+.large.six {
+  background-image: url("../images/img-story-3.png");
+  background-size: 100%;
+  display: flex;
+}
+
+.medium.two {
+  background-image: url("../images/img-story-1.png");
+  background-size: cover;
+  display: flex;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
