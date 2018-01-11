@@ -1,3 +1,5 @@
+/* Page Header */
+
 body {
   margin-left:0;
   margin-right:0;
@@ -35,92 +37,11 @@ body {
   padding: 10px;
 }
 
+/* Page Body */
+
 .main_container {
   display: flex;
   justify-content: center;
-}
-
-.large {
-  width: 630px;
-  border: 1px solid black;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-.large.main {
-  margin: 30px 15px;
-}
-
-.large.bottom {
-  display: flex;
-  flex-flow: row;
-}
-
-.large.bottom_left, .large.bottom_right {
-  display: flex;
-  flex-flow: column;
-}
-
-.medium {
-  width: 300px;
-  border: 1px solid black;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-.medium.main {
-  margin: 30px 15px;
-}
-
-.small {
-  width: 240px;
-  border: 1px solid black;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
-.small.main {
-  margin: 30px 15px;
-}
-
-.image {
-  font-family: Georgia;
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-}
-
-.image.main {
-  font-size: 40px;
-}
-
-.large.one {
-  background-image: url("../images/img-story-main.png");
-  background-size: 100%;
-  display: flex;
-  justify-content: flex-start;
-  }
-
-.large.four {
-  background-image: url("../images/img-story-2.png");
-  background-size: cover;
-  display: inline-flex;
-
-}
-
-.large.six {
-  background-image: url("../images/img-story-3.png");
-  background-size: 100%;
-  display: flex;
-}
-
-.medium.two {
-  background-image: url("../images/img-story-1.png");
-  background-size: cover;
-  display: flex;
 }
 
 p {
@@ -128,3 +49,80 @@ p {
   font-size: 17px;
   color: black;
 }
+
+.large {
+  width: 630px;
+  border: 1px solid black;
+  display: flex;
+  flex-flow: column;
+}
+
+/* !!! BROKEN SECTION START !!! */
+
+.large.bottom {
+  /*display: flex;
+  flex-flow: row;*/
+}
+
+.large.bottom_left, .large.bottom_right {
+  display: flex;
+  flex-flow: column;
+}
+
+/* !!! BROKEN SECTION END !!! */
+
+.medium {
+  width: 300px;
+  border: 1px solid black;
+  /*display: flex;
+  flex-flow: column;*/
+}
+
+.small {
+  width: 240px;
+  border: 1px solid black;
+  /*display: flex
+  flex-flow: column;*/
+}
+
+.large.main, .medium.main, .small.main {
+  margin: 30px 15px;
+}
+
+/* Image Section START */
+
+.image {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+  text-align: center;
+}
+
+.image.main {
+  font-size: 40px;
+  text-align: left;
+}
+
+.large.one {
+  background-image: url("../images/img-story-main.png");
+}
+
+.large.four {
+  background-image: url("../images/img-story-2.png"); /*Farm Girl*/
+}
+
+.large.six {
+  background-image: url("../images/img-story-3.png"); /*Photographer*/
+}
+
+.medium.two {
+  background-image: url("../images/img-story-1.png"); /*Cat picture*/
+  height: 300px;
+  text-align: center;
+}
+
+/* Image Section END */
+
+/* Page Footer */
