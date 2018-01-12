@@ -3,43 +3,54 @@
 body {
   margin-left:0;
   margin-right:0;
+  margin-top: 0;
 }
 
 .header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
-  display: flex;
+  white-space: nowrap;
+
+  display: block;
+  position: fixed;
+  z-index: 5;
+
+  width: 100%;
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid black;
+  background-color: white;
+
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header_flex {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  color: MediumAquamarine;
-  display: flex;
-  align-items: center;
   padding-left: 20px;
 }
 
 .page_title {
+  color: MediumAquamarine;
   padding-left: 10px;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-  padding-right: 20px;
+  padding-right: 20px; /*To prevent bumping into 'My Times' when browser not wide enough*/
 }
 
 .navigation a {
   color: Black;
-  padding: 10px;
+  padding-right: 20px;
 }
 
 /* Page Body */
 
 .main_container {
+  position: relative;
   display: flex;
   justify-content: center;
 }
@@ -48,6 +59,20 @@ p {
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .large {
@@ -73,20 +98,26 @@ p {
 
 .medium {
   width: 300px;
-  border: 1px solid black;
-  /*display: flex;
-  flex-flow: column;*/
+  /*border: 1px solid black;*/
 }
 
 .small {
   width: 240px;
-  border: 1px solid black;
-  /*display: flex
-  flex-flow: column;*/
+  /*border: 1px solid black;*/
+}
+
+.side-vert-bar {
+  display: block;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid black;
+  padding: 10px 20px;
 }
 
 .large.main, .medium.main, .small.main {
-  margin: 30px 15px;
+  margin: 130px 15px;
 }
 
 /* Image Section START */
@@ -98,11 +129,15 @@ p {
   color: white;
   height: 300px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .image.main {
   font-size: 40px;
   text-align: left;
+  padding-left: 20px;
 }
 
 .large.one {
@@ -119,10 +154,46 @@ p {
 
 .medium.two {
   background-image: url("../images/img-story-1.png"); /*Cat picture*/
-  height: 300px;
-  text-align: center;
 }
 
 /* Image Section END */
 
 /* Page Footer */
+
+footer {
+  background-color: MediumAquamarine;
+  padding: 125px 0px;
+  white-space: nowrap;
+}
+
+.firstline_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.footer_navigation a {
+  font-family: Verdana;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.footer_mytimes {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.vert_bar {
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.copyright {
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  padding: 10px;
+}
