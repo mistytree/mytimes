@@ -1,12 +1,10 @@
 /* Page Header */
 
 body {
-  margin-left:0;
-  margin-right:0;
-  margin-top: 0;
+  margin: 0;
 }
 
-.header {
+header {
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -39,7 +37,7 @@ body {
 .page_title {
   color: MediumAquamarine;
   padding-left: 10px;
-  padding-right: 20px; /*To prevent bumping into 'My Times' when browser not wide enough*/
+  padding-right: 20px; /* To prevent bumping into 'My Times' when browser not wide enough */
 }
 
 .navigation a {
@@ -50,9 +48,9 @@ body {
 /* Page Body */
 
 .main_container {
-  position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: -40px; /* To minimize white space between footer and bottom images */
 }
 
 p {
@@ -77,33 +75,43 @@ h3 {
 
 .large {
   width: 630px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-flow: column;
 }
-
-/* !!! BROKEN SECTION START !!! */
 
 .large.bottom {
-  /*display: flex;
-  flex-flow: row;*/
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
 }
 
-.large.bottom_left, .large.bottom_right {
+.large.bottom_left,
+.large.bottom_right {
   display: flex;
   flex-flow: column;
 }
 
-/* !!! BROKEN SECTION END !!! */
+.large.bottom_right {
+  padding-left: 30px;
+}
+
+.large.three,
+.large.four,
+.large.five,
+.large.six {
+  width: 300px;
+}
 
 .medium {
   width: 300px;
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
 }
 
 .small {
   width: 240px;
-  /*border: 1px solid black;*/
+  /* border: 1px solid black; */
 }
 
 .side-vert-bar {
@@ -116,11 +124,13 @@ h3 {
   padding: 10px 20px;
 }
 
-.large.main, .medium.main, .small.main {
+.large.main,
+.medium.main,
+.small.main {
   margin: 115px 15px;
 }
 
-/* Image Section START */
+/* Image Section */
 
 .image {
   font-family: Georgia;
@@ -145,18 +155,16 @@ h3 {
 }
 
 .large.four {
-  background-image: url("../images/img-story-2.png"); /*Farm Girl*/
+  background-image: url("../images/img-story-2.png"); /* Farm Girl */
 }
 
 .large.six {
-  background-image: url("../images/img-story-3.png"); /*Photographer*/
+  background-image: url("../images/img-story-3.png"); /* Photographer */
 }
 
 .medium.two {
-  background-image: url("../images/img-story-1.png"); /*Cat picture*/
+  background-image: url("../images/img-story-1.png"); /* Cat picture */
 }
-
-/* Image Section END */
 
 /* Page Footer */
 
